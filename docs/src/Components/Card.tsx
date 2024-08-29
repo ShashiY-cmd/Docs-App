@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 interface Tag {
   isOpen: boolean;
   tagTitle: string;
-  tagColor: string; // This should be a string like 'blue' or 'green'
+  tagColor: string;
 }
 
 interface Data {
