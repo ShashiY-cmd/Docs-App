@@ -29,7 +29,7 @@ function Foreground() {
       className="fixed top-0 left-0 z-[3] w-full h-full flex gap-10 flex-wrap p-5 "
     >
       {data.map((item, index) => (
-        <Card data={item} reference={ref} />
+        <Card key={index} data={item} reference={ref} />
       ))}
     </div>
   );
