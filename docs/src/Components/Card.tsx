@@ -3,7 +3,24 @@ import { LuDownload } from "react-icons/lu";
 import { IoCloseOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 
-function Card({ data, reference }) {
+interface Tag {
+  isOpen: boolean;
+  tagTitle: string;
+  tagColor: string; // This should be a string like 'blue' or 'green'
+}
+
+interface Data {
+  desc: string;
+  filesize: string;
+  close: boolean;
+  tag: Tag;
+}
+interface CardProps {
+  data: Data;
+  reference: React.RefObject<HTMLDivElement>;
+}
+
+const Card: React.FC<CardProps> = ({ data, reference }) => {
   return (
     <motion.div
       drag
@@ -34,6 +51,6 @@ function Card({ data, reference }) {
       </div>
     </motion.div>
   );
-}
+};
 
 export default Card;
