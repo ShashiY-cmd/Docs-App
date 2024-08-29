@@ -44,7 +44,11 @@ const Card: React.FC<CardProps> = ({ data, reference }) => {
         </div>
 
         {data.tag.isOpen && (
-          <div className=" `tag w-full py-4 ${data.tag.tagColor === blue ? bg-blue-400 :bg-green-400} /* flex justify-center */`">
+          <div
+            className={`tag w-full py-4 flex justify-center ${
+              data.tag.tagColor === "blue" ? "bg-blue-400" : "bg-green-400"
+            }`}
+          >
             <h3 className="text-sm font-semibold">{data.tag.tagTitle}</h3>
           </div>
         )}

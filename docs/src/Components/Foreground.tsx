@@ -8,19 +8,19 @@ function Foreground() {
       desc: "The Brown fox is running at a speed  of lamborgini",
       filesize: ".9mb",
       close: true,
-      tag: { isOpen: true, tagTitle: "Downlaod Now", tagColor: "green" },
-    },
-    {
-      desc: "The Brown fox is running at a speed  of lamborgini",
-      filesize: ".9mb",
-      close: true,
       tag: { isOpen: true, tagTitle: "Downlaod Now", tagColor: "blue" },
     },
     {
       desc: "The Brown fox is running at a speed  of lamborgini",
       filesize: ".9mb",
       close: true,
-      tag: { isOpen: true, tagTitle: "Upload", tagColor: "green" },
+      tag: { isOpen: true, tagTitle: "Downlaod Now", tagColor: "green" },
+    },
+    {
+      desc: "The Brown fox is running at a speed  of lamborgini",
+      filesize: ".9mb",
+      close: true,
+      tag: { isOpen: true, tagTitle: "Upload", tagColor: "blue" },
     },
   ];
   return (
